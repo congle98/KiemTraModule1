@@ -19,17 +19,17 @@
             a = a + b;
             b = temp;
             if((x == b) || (x == 0)){
-                return true;
+                return check;
             }
-            else if((b > x) && (x != b))
-            {
+            else if((b > x) && (x != b)) {
+                check = false;
                 return false;
             }
         }
     }
 
     //DEMO
-    let x = 10;
+    let x = 377;
     let demo = isFibonacci(x);
     alert(demo);
 </script>
