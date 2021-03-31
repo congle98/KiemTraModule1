@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // Câu 1:Cho danh sách các điểm thi ở trong một mảng. Hãy viết hàm findMax()
+    // với đầu vào là một mảng điểm và đầu ra là điểm số cao nhất được tìm thấy trong danh sách đó
+    function findMax(arr) {
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] >= max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    //DEMO
+    let arr = [3,7,5,9,10,6];
+    let demo = findMax(arr);
+    alert(demo);
+</script>
